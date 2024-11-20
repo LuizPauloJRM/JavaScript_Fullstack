@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <script>
+        //Digitar seu nome no prompt 
+        const nome = prompt("Digite seu nome: ");
+        // Armazena as informações solicitadas
+        const quantidadeLetras = nome.length;
+        const segundaLetra = nome[1]; // Índice 1 é a segunda letra
+        const letra = prompt("Digite uma letra para buscar em seu nome:").toUpperCase();
+        const primeiroIndice = nome.toUpperCase().indexOf(letra);
+        const ultimoIndice = nome.toUpperCase().lastIndexOf(letra);
+        const ultimasTresLetras = nome.slice(-3);
+        const palavrasNome = nome.split(" ");
+        const nomeMaiusculas = nome.toUpperCase();
+        const nomeMinusculas = nome.toLowerCase();
+
+        // Exibe as respostas
+        alert(`
+        Seu nome tem ${quantidadeLetras} letras.
+        A segunda letra do seu nome é: ${segundaLetra}.
+        O primeiro índice da letra "${letra}" no seu nome é: ${primeiroIndice}.
+        O último índice da letra "${letra}" no seu nome é: ${ultimoIndice}.
+        As últimas 3 letras do seu nome são: ${ultimasTresLetras}.
+        As palavras do seu nome são: ${palavrasNome}.
+        Seu nome com letras maiúsculas: ${nomeMaiusculas}.
+        Seu nome com letras minúsculas: ${nomeMinusculas}.
+        `);
+    </script>
+
+</body>
+
+</html>
