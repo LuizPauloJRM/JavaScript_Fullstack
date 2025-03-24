@@ -11,3 +11,4 @@ Falsy values : 0 ,"", '',`` ,null, undefined ,NaN
 //console.log('Luiz Paulo ' && 0 &&'Maria')//Não encontrou nada falso 
 console.log('Luiz' && 'Maria')//Retorna o último valor checado "Maria"
 console.log('Luiz' && NaN && 'Maria')//Checou "Luiz" e parou no false "NaN"
+
